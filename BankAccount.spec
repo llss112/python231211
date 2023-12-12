@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['BankAccount.py'],
+    ['BankAccount.py', '.'],
     pathex=[],
     binaries=[],
     datas=[],
