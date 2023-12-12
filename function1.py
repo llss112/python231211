@@ -16,3 +16,19 @@ def connectURI(server,port):
 # 호출
 print(connectURI("multi.com","80"))
 print(connectURI(port="8080",server="multi.com"))
+
+
+# 가변 인자 처리 
+
+def union(*ar):
+    # 지역변수
+    result=[]
+    for item in ar:
+        for x in item:
+            if x not in result:
+                result.append(x)
+    return result
+
+# 호축
+print(union("HAM","SPAM"))
+print(union("HAM","SPAM","EGG"))
