@@ -67,3 +67,19 @@ years=list(range(1,11))
 print([i**2 for i in lst if i>5])
 tp=(["apple","kiwi","orange"])
 print([len(i) for i in tp])
+
+
+# 구구단
+
+for i in [2,3,4,5,6]:
+    print("{0}단 출력".format(i))
+    for j in [1,2,3,4,5,6,7,8,9]:
+        print("{0}*{1}={2}".format(i,j,i*j))
+
+# f-string
+for i in [2,3,4,5,6]:
+    print(f"{i}단 출력")
+    for j in [1,2,3,4,5,6,7,8,9]:
+        print(f"{i}*{j}={i*j}")
+
+# 바로 넣는 포맷팅
